@@ -12,30 +12,31 @@
 <form method="POST" action"/leader_board">
 	<!-- The @quiz is the name of the controller variable, it must be the same name in the erb file. -->
 	<!-- The |display| must have the same name to display your information, within this cause "question" -->
-				<% @category.each do |display| %>
+				<% @question_01.each do |display| %>
 				<ul>
 					<li>
 						<%= display.question %>
 					</li>
 					<li>
-						<input type="radio" name="answer_a">
+						<input type="radio" name="question_01">
 						<%= display.choice_a %>
 					</li>
 					<li>
-						<input type="radio" name="answer_b">
+						<input type="radio" name="question_01">
 						<%= display.choice_b %>
 					</li>
 					<li>
-						<input type="radio" name="answer_c">
+						<input type="radio" name="question_01">
 						<%= display.choice_c %>
 					</li>
 				</ul>
 		<% end %>
+
 </form>
 </section>
 	
 <form method="POST" action="/leader_board">
-	<button type="submit">Submit</button>
+	<button type="submit" >Submit</button>
 </form>
 
 
