@@ -1,7 +1,10 @@
 class QuizzesController < ApplicationController
 
 	def index
-		@question01 = Quiz.where(:category => 'question_01')
+		@category = Quiz.where(:category => 'ruby')
 	end
+
+
+
 
 end
