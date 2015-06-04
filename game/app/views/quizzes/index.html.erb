@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ruby on Rails: Quiz App</title>
+</head>
+<body>
+
+<h1>Welcome to Ruby on Rails: Quiz App</h1>
+<h2>Note: There will be no points awarded for unanswered questions.</h2>
+
+<form method="POST" action"/leader_board">
+	<section class="questions">
+				
+	<!-- The @quiz is the name of the controller variable, it must be the same name in the erb file. -->
+	<!-- The |display| must have the same name to display your information, within this cause "question" -->
+				<% @question01.each do |display| %>
+				<ul>
+					<li>
+						<%= display.question %>
+					</li>
+					<li>
+						<input type="radio" name="questions">
+						<%= display.choice_a %>
+					</li>
+					<li>
+						<input type="radio" name="questions">
+						<%= display.choice_b %>
+					</li>
+					<li>
+						<input type="radio" name="questions">
+						<%= display.choice_c %>
+					</li>
+				</ul>
+		<% end %>
+</section>
+</form>
+	
+
+<form method="POST" action="/leader_board">
+	<button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
