@@ -43,12 +43,12 @@ A children's book that runs the user through a story pertaining to javascript/ru
 ### JavaScript Table - Correlates to Ruby table by FOREIGN KEY
 
 | ID | user      | score   |    date    |
-|----|---------------------|------------|
-| 1  | "Peter"   | 1000pts | 11.03.2017 |
-| 2  | "Liz DOG" | 980pts  | 08.12.1465 | 
-| 3  | "John"    | 789pts  | 05.09.1763 |
-| 4  | "Eric"    | 756pts  | 09.24.1998 |
-| 5  | "Tim"     | 500pts  | 12.15.2089 |
+|----|-----------|---------|------------|
+| 1  | "Peter"   | 1000pts | 11/03/2017 |
+| 2  | "Liz DOG" | 980pts  | 08/12/1465 | 
+| 3  | "John"    | 789pts  | 05/09/1763 |
+| 4  | "Eric"    | 756pts  | 09/24/1998 |
+| 5  | "Tim"     | 500pts  | 12/15/2089 |
 
 <br/>
 
