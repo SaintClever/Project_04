@@ -24,7 +24,7 @@ A children's book that runs the user through a story pertaining to javascript/ru
 
 
 
-### Ruby Table - Correlates to JavaSript table
+### Ruby Table - Correlates to User table
 
 | ID | Question                  | choice_a         |      choice_b    |      choice_c     |    answer    | category |
 |----|---------------------------|------------------|------------------|-------------------|--------------|----------|
@@ -36,38 +36,22 @@ A children's book that runs the user through a story pertaining to javascript/ru
 
 <br/>
 
-question01 = Quiz.create({
-	question: "What is Ruby on Rails?",
-	choice_a: "An open source web application framework written in Ruby.",
-	choice_b: "A character from King Of Thrones.",
-	choice_c: "A JavaScript framework for 3D graphic manipulation.",
-	answer: "An open source web application framework written in Ruby.",
-	category: "ruby"
-	})
 
-
-![ERD](https://github.com/SaintClever/Knope/blob/master/w04/d05/Homework/ERD.jpg)
+![ERD](https://github.com/SaintClever/Project_04/tree/master/resources/quiz.jpg)
 
 
 ### JavaScript Table - Correlates to Ruby table by FOREIGN KEY
 
-| ID | Question                  | choice_a         |      choice_b    |      choice_c     |    answer    |    category    |
-|----|---------------------------|------------------|------------------|-------------------|--------------|----------------|
-| 1  | "What is JavaScript...?"  | "An open..."     | "A character..." | "A JavaScript..." | "An open..." |  "javascript"  |
-| 2  | "What kind of pattern?"   | "MVC -  ..."     | "CDN - Conte..." | "WEBrick..."      | "MVC -  ..." |  "javascript"  |
-| 3  | "The library used ...?"   | "Gems..."        | "Node.js...",    | "WEBrick..."      | "WEBrick..." |  "javascript"  |
-| 4  | "Define ActiveRec ...?"   | "A command...?   | "An entire..."   | "A JavaScript..." | "An open..." |  "javascript"  |
-| 5  | "Ruby on Rails is ...?"   | "An open..."     | "Convention..."  | "Bring your..."   | "Convent..." |  "javascript"  |
+| ID | user      | score   |    date    |
+|----|---------------------|------------|
+| 1  | "Peter"   | 1000pts | 12/09/1763 |
+| 2  | "Liz DOG" | 980pts  | 12/09/1763 | 
+| 3  | "John"    | 789pts  | 12/09/1763 |
+| 4  | "Eric"    | 756pts  | 12/09/1763 |
+| 5  | "Tim"     | 500pts  | 12/09/1763 |
 
 <br/>
 
-![ERD](https://github.com/SaintClever/Knope/blob/master/w04/d05/Homework/ERD.jpg)
+![ERD](https://github.com/SaintClever/Project_04/tree/master/resources/leader_board.jpg)
+![ERD](https://github.com/SaintClever/Project_04/tree/master/resources/rubyOnRails_final.jpg)
 
-question01 = Quiz.create({
-	question: "Who developed JavaScript?",
-	choice_a: "Jeffrey Konowitch",
-	choice_b: "Brendan Eich, which only took 10 days!",
-	choice_c: "Neel Patel and Andrew Fritz",
-	answer: "Brendan Eich",
-	category: "javascript"
-	})
