@@ -4,40 +4,38 @@
 	<title>Ruby on Rails: Quiz App</title>
 </head>
 <body>
+<script src="main.js"></script>
 
 <h1>Welcome to Ruby on Rails: Quiz App</h1>
 <h2>Note: There will be no points awarded for unanswered questions.</h2>
 
 <section class="questions">
-<form method="POST" action"/leader_board">
+<form method="POST" action="/error">
 	<!-- The @quiz is the name of the controller variable, it must be the same name in the erb file. -->
 	<!-- The |display| must have the same name to display your information, within this cause "question" -->
-				<% @question_01.each do |display| %>
-				<ul>
-					<li>
-						<%= display.question %>
-					</li>
-					<li>
-						<input type="radio" name="question_01">
-						<%= display.choice_a %>
-					</li>
-					<li>
-						<input type="radio" name="question_01">
-						<%= display.choice_b %>
-					</li>
-					<li>
-						<input type="radio" name="question_01">
-						<%= display.choice_c %>
-					</li>
-				</ul>
-		<% end %>
-
+	<% @quiz.each do |display| %>
+	<ul>
+		<li>
+		<%= display.question %>
+		</li>
+		<li>
+				<input type="radio" name="question_01" value="<%= display.choice_a %>">
+				<%= display.choice_a %>
+		</li>
+		<li>
+				<input type="radio" name="question_01" value="<%= display.choice_b %>">
+				<%= display.choice_b %>
+		</li>
+		<li>
+				<input type="radio" name="question_01" value="<%= display.choice_c %>">
+				<%= display.choice_c %>
+		</li>
+	</ul>
+	<input type="hidden" name="id" value="<%= display.id %>">
+	<% end %>
+		<button type="submit">Submit</button>
 </form>
 </section>
-	
-<form method="POST" action="/leader_board">
-	<button type="submit" >Submit</button>
-</form>
 
 
 </body>
