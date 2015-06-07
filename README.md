@@ -37,7 +37,7 @@ A children's book that runs the user through a story pertaining to javascript/ru
 <br/>
 
 
-![ERD](https://github.com/SaintClever/Project_04/tree/master/resources/quiz.jpg)
+![ERD](https://github.com/SaintClever/Project_04/tree/master/quiz.jpg)
 
 
 ### JavaScript Table - Correlates to Ruby table by FOREIGN KEY
@@ -52,6 +52,6 @@ A children's book that runs the user through a story pertaining to javascript/ru
 
 <br/>
 
-![ERD](https://github.com/SaintClever/Project_04/tree/master/resources/leader_board.jpg)
-![ERD](https://github.com/SaintClever/Project_04/tree/master/resources/rubyOnRails_final.jpg)
+![ERD](https://github.com/SaintClever/Project_04/tree/master/leader_board.jpg)
+![ERD](https://github.com/SaintClever/Project_04/tree/master/rubyOnRails_final.jpg)
 
