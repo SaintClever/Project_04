@@ -53,5 +53,6 @@ A children's book that runs the user through a story pertaining to javascript/ru
 <br/>
 
 ![ERD](https://github.com/SaintClever/Project_04/blob/master/resources/leader_board.jpg)
-![ERD](https://github.com/SaintClever/Project_04/blob/master/resources/rubyOnRails_final.gif)
+![ERD](https://github.com/SaintClever/Project_04/blob/master/resources/rubyOnRails_intro.gif)
+![ERD](https://github.com/SaintClever/Project_04/blob/master/resources/rubyOnRails_quiz.gif)
 
