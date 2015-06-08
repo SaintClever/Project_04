@@ -7,18 +7,18 @@ class QuizzesController < ApplicationController
 
 	def error
 		@quiz = Quiz.where(:question => "What is Ruby on Rails?")
-		@quiz_params = Quiz.find(params[:id])
+		# @quiz_params = Quiz.find(params[:id])
 
-		@choice_a = @quiz_params.choice_a
-		@choice_b = @quiz_params.choice_b
-		@choice_c = @quiz_params.choice_c
-		@answer = @quiz_params.choice_a
+		@data = params[:question_01][0]
+		@incorrect = params[:question_01][1] || params[:question_01][2]
 
-		if @answer == @quiz_params.choice_a
-			puts @quiz_params.choice_a
-			render :success
-		else
+		@choice_a = params[:question_01]
+
+
+		if @data != "A"
 			render :error
+		else
+			render :success
 		end
 	end
 

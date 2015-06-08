@@ -11,10 +11,10 @@ Quiz.delete_all
 
 question01 = Quiz.create({
 	question: "What is Ruby on Rails?",
-	choice_a: "An open source web application framework written in Ruby.",
-	choice_b: "A character from King Of Thrones.",
-	choice_c: "A JavaScript framework for 3D graphic manipulation.",
-	answer: "An open source web application framework written in Ruby.",
+	choice_a: "A. An open source web application framework written in Ruby.",
+	choice_b: "B. A character from King Of Thrones.",
+	choice_c: "C. A JavaScript framework for 3D graphic manipulation.",
+	answer: "A. An open source web application framework written in Ruby.",
 	category: "ruby"
 	})
 
