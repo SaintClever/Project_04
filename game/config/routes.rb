@@ -4,9 +4,12 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   resources :quizzes
-  post 'error' => 'quizzes#error'
+  post 'quiz' => 'quizzes#quiz'
 
   root 'quizzes#index'
+
+
+  get 'quizzes/:id' => 'quizzes#view'
 
   # post 'leader_board' => 'quizzes#leader_board'
 
